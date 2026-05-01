@@ -1,0 +1,138 @@
+.header {
+  color: var(--color-custom-black);
+
+  &__banner {
+    background-color: var(--light-gray);
+    color: var(--custom-gray);
+    width: 100vw;
+    position: relative;
+    isolation: isolate;
+    margin-inline: calc(calc(50vw - 50%) * -1) !important;
+  }
+
+  &__banner_link {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    text-decoration: underline;
+  }
+
+  &__hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 22px 0 25px;
+  }
+
+  &__hero_menu {
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      fill: var(--light-gray-100);
+    }
+  }
+
+  &__hero_phone {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+  }
+
+  &__hero_phoneText {
+    white-space: nowrap;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+  }
+
+  &__hero_phoneSubText {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    padding-top: 2px;
+    letter-spacing: 0;
+    text-align: right;
+    text-transform: uppercase;
+  }
+
+  &__hero_button {
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 16px 29px 15px;
+    background: var(--light-red);
+    border-radius: 6px;
+    color: white;
+    white-space: nowrap;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      will-change: transform;
+      transform: scale(1.05);
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 29px;
+
+    &_list {
+      display: flex;
+      align-items: center;
+      gap: clamp(20px, 5.5vw, 86px);
+    }
+
+    &_item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 100%;
+      color: var(--custom-black);
+      text-transform: uppercase;
+      white-space: nowrap;
+      transition: color 0.2s ease-in-out;
+
+      &:hover {
+        color: var(--light-red);
+      }
+    }
+
+    &_actions {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    &_action {
+      position: relative;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    &_count {
+      position: absolute;
+      top: -12px;
+      right: -17px;
+      min-width: 26px;
+      height: 18px;
+      background: var(--light-red);
+      border-radius: 14px;
+      color: white;
+      font-size: 12px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 4px;
+    }
+  }
+}

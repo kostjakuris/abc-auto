@@ -1,0 +1,59 @@
+.hero {
+  width: 100vw;
+  position: relative;
+  isolation: isolate;
+  margin-inline: calc(calc(50vw - 50%) * -1) !important;
+  overflow-x: hidden !important;
+
+  &__pagination_wrapper {
+    position: absolute;
+    bottom: 83px;
+    left: 25px;
+    right: 25px;
+    z-index: 10;
+    pointer-events: none;
+
+    :global(.swiper-pagination-bullet) {
+      pointer-events: auto;
+    }
+  }
+
+  &__slide {
+    border-radius: inherit;
+    background-color: var(--light-gray);
+    background-image: url("/images/cars.png");
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    aspect-ratio: 3.11;
+    padding-top: 81px;
+  }
+
+  &__slide_span {
+    color: white;
+    background: var(--light-red);
+    border-radius: 33px;
+    padding: 5px 13px;
+    width: fit-content;
+  }
+
+  &__slide_title {
+    margin-top: 35px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: var(--color-custom-black);
+    white-space: pre-line;
+  }
+
+  &__slide_text {
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: var(--custom-gray);
+  }
+}

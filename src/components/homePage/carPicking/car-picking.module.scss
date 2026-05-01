@@ -1,0 +1,82 @@
+.carPicking {
+  margin-top: 40px;
+  border-radius: 11px;
+  background-color: rgba(239, 240, 240, 0.6);
+  padding: 27px 30px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+
+  &__title {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: var(--color-custom-black);
+    margin-bottom: 22px;
+  }
+
+  &__values {
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__grid {
+    flex-grow: 1.4;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(136px, 1fr));
+    gap: 3px 29px;
+  }
+
+  &__brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 6px;
+    border: none;
+    cursor: pointer;
+    will-change: transition;
+    border-radius: 6px;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: var(--light-gray-300);
+    }
+  }
+
+  &__name {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 290%;
+    letter-spacing: 0;
+    color: var(--custom-black);
+    white-space: nowrap;
+  }
+
+  &__button {
+    margin-top: 25px;
+    cursor: pointer;
+    padding: 17px;
+    width: 100%;
+    background: var(--light-red);
+    border-radius: 6px;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      will-change: transform;
+      transform: scale(1.05);
+    }
+  }
+
+  &__selectors {
+    margin-top: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+  }
+}
